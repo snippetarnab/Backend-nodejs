@@ -1,10 +1,19 @@
 import dotenv from "dotenv";
 import connectDB from "./db/index.db.js";
+import { app } from "./app.js";
 
 dotenv.config({
   path: "./env",
 });
-connectDB();
+connectDB()
+  .then(() => {
+    app.listen(process.env.PORT || 3000, () => {
+      console.log(`Sever is runnig at port: ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    app.listen("Mngodb connection error!!:", err);
+  });
 
 //Another approch of connecting the database
 /*

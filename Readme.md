@@ -1,7 +1,13 @@
 
+<<<<<<< HEAD
 # Vidtube
 
 This is a VideoTube project inspire by Youtube.
+=======
+# Project Title
+
+A brief description of what this project does and who it's for
+>>>>>>> 05ce5f93ec248c88a9d01826874205ec9de3f753
 
 
 ## API Reference

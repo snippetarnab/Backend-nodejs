@@ -112,8 +112,7 @@ const loginUser = asynchandler(async (req, res) => {
     .json(new ApiResponse(200, loggedInUser, "user logged in successfully"));
 });
 
-const loggedOut =asynchandler(async (req, res) => {
 
-})
+const loggedOut = asynchandler(async (req, res) => {});
 
 export { registerUser };
